@@ -13,8 +13,12 @@
 		FA412F3F23F51D5D0033F380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA412F3D23F51D5D0033F380 /* Main.storyboard */; };
 		FA412F4123F51D620033F380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA412F4023F51D620033F380 /* Assets.xcassets */; };
 		FA412F4423F51D620033F380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA412F4223F51D620033F380 /* LaunchScreen.storyboard */; };
-		FA412F4F23F51D620033F380 /* TDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA412F4E23F51D620033F380 /* TDDTests.swift */; };
 		FA412F5A23F51D620033F380 /* TDDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA412F5923F51D620033F380 /* TDDUITests.swift */; };
+		FA435CA623F687BB0098D8A2 /* CookieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA435CA523F687BB0098D8A2 /* CookieTests.swift */; };
+		FA435CA823F699AD0098D8A2 /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA435CA723F699AD0098D8A2 /* Cookie.swift */; };
+		FA435CA923F69A4E0098D8A2 /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA435CA723F699AD0098D8A2 /* Cookie.swift */; };
+		FA435CAD23F69B310098D8A2 /* CookieControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA435CAC23F69B310098D8A2 /* CookieControllerTests.swift */; };
+		FA435CAF23F6A12A0098D8A2 /* CookieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA435CAE23F6A12A0098D8A2 /* CookieController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +48,14 @@
 		FA412F4323F51D620033F380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA412F4523F51D620033F380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA412F4A23F51D620033F380 /* TDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA412F4E23F51D620033F380 /* TDDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDTests.swift; sourceTree = "<group>"; };
 		FA412F5023F51D620033F380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA412F5523F51D620033F380 /* TDDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA412F5923F51D620033F380 /* TDDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDUITests.swift; sourceTree = "<group>"; };
 		FA412F5B23F51D620033F380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA435CA523F687BB0098D8A2 /* CookieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieTests.swift; sourceTree = "<group>"; };
+		FA435CA723F699AD0098D8A2 /* Cookie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
+		FA435CAC23F69B310098D8A2 /* CookieControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieControllerTests.swift; sourceTree = "<group>"; };
+		FA435CAE23F6A12A0098D8A2 /* CookieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +113,8 @@
 				FA412F4023F51D620033F380 /* Assets.xcassets */,
 				FA412F4223F51D620033F380 /* LaunchScreen.storyboard */,
 				FA412F4523F51D620033F380 /* Info.plist */,
+				FA435CA723F699AD0098D8A2 /* Cookie.swift */,
+				FA435CAE23F6A12A0098D8A2 /* CookieController.swift */,
 			);
 			path = TDD;
 			sourceTree = "<group>";
@@ -113,7 +122,8 @@
 		FA412F4D23F51D620033F380 /* TDDTests */ = {
 			isa = PBXGroup;
 			children = (
-				FA412F4E23F51D620033F380 /* TDDTests.swift */,
+				FA435CAC23F69B310098D8A2 /* CookieControllerTests.swift */,
+				FA435CA523F687BB0098D8A2 /* CookieTests.swift */,
 				FA412F5023F51D620033F380 /* Info.plist */,
 			);
 			path = TDDTests;
@@ -199,6 +209,7 @@
 					};
 					FA412F4923F51D620033F380 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = FA412F3323F51D5D0033F380;
 					};
 					FA412F5423F51D620033F380 = {
@@ -260,8 +271,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA412F3C23F51D5D0033F380 /* ViewController.swift in Sources */,
+				FA435CA823F699AD0098D8A2 /* Cookie.swift in Sources */,
 				FA412F3823F51D5D0033F380 /* AppDelegate.swift in Sources */,
 				FA412F3A23F51D5D0033F380 /* SceneDelegate.swift in Sources */,
+				FA435CAF23F6A12A0098D8A2 /* CookieController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +282,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA412F4F23F51D620033F380 /* TDDTests.swift in Sources */,
+				FA435CA623F687BB0098D8A2 /* CookieTests.swift in Sources */,
+				FA435CA923F69A4E0098D8A2 /* Cookie.swift in Sources */,
+				FA435CAD23F69B310098D8A2 /* CookieControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +486,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = TDDTests/Info.plist;
@@ -482,6 +499,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.TDDTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDD.app/TDD";
@@ -493,6 +511,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = TDDTests/Info.plist;

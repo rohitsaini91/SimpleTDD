@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+enum cookieType{
+    case shortbread
+    case gingerbread
+    case chocolateChip
+}
+
+class Cookie: NSObject{
+    var type: cookieType
+    init(_ type: cookieType){
+        self.type = type
+        super.init()
+    }
+}
