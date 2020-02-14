@@ -1,15 +1,14 @@
 //
-//  TDDTests.swift
+//  CookieTests.swift
 //  TDDTests
 //
-//  Created by MACBOOK on 13/02/20.
+//  Created by MACBOOK on 14/02/20.
 //  Copyright © 2020 Saini. All rights reserved.
 //
 
 import XCTest
-@testable import TDD
 
-class TDDTests: XCTestCase {
+class CookieTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
